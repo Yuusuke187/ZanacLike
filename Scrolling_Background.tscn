@@ -1,11 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://hwflkdx6f8si"]
 
-[ext_resource type="Script" path="res://scrolling_background.gd" id="1_qxvun"]
+[ext_resource type="Script" path="res://Scrolling_Background.gd" id="1_ps8ti"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_b2dbu"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
-script = ExtResource("1_qxvun")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(20, 20)
@@ -14,3 +13,4 @@ motion_scale = Vector2(20, 20)
 texture = SubResource("PlaceholderTexture2D_b2dbu")
 region_enabled = true
 region_rect = Rect2(256, 224, 0, 0)
+script = ExtResource("1_ps8ti")
