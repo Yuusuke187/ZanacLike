@@ -16,7 +16,7 @@ var spawn_rate = 2.0
 
 func spawn_timer(delta):
 	timer += delta
-	if timer > spawn_rate
+	if timer > spawn_rate:
 		timer = 0
 		# spawn_enemy()
 
