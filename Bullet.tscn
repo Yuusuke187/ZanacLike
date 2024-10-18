@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://batu83pd621gx"]
+
+[sub_resource type="GDScript" id="GDScript_y6sy7"]
+script/source = "extends RigidBody2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+func _shoot_bullet():
+	var bullet = Bullet.instance # Is this like using self.* in Python?
+	bullet.position = position
+	bullet.rotation = rotation
+	
+	get_parent().add_child(bullet)
+		
+"
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = SubResource("GDScript_y6sy7")
