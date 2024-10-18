@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_down"):
 		velocity.y -= 1
 	velocity = velocity.normalized() * SPEED
-	move_and_slide()
+	move_and_slide()	# Apparently this command used to use inputs - I need to research this more.
 	
 	
 	
