@@ -10,4 +10,4 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-# var enemy_scene = preload(<enemy image file>)
+var enemy_scene = preload("res://First_Enemy.tscn")
